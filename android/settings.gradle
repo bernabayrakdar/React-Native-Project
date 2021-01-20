@@ -1,0 +1,5 @@
+rootProject.name = 'proje1'
+include ':react-native-vision-object-detection'
+project(':react-native-vision-object-detection').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vision-object-detection/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
